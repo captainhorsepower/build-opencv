@@ -8,5 +8,5 @@ cmake -GNinja \
     -D CMAKE_INSTALL_PREFIX="$HOME/.virtualenvs/3D-reconstruction" \
     -D CMAKE_BUILD_TYPE='Release' \
     -D OPENCV_ENABLE_NONFREE='ON' \
+    -D OPENCV_EXTRA_MODULES_PATH='../opencv_contrib/modules/xfeatures2d' \
     "../opencv"
-    # -D OPENCV_EXTRA_MODULES_PATH='../extra-modules' \
