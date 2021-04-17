@@ -1,9 +1,7 @@
 #!/usr/bin/env zsh
 
 
-mkdir -p build
-
-cd build
+mkdir -p build; cd build
 
 # install directly to virtual env to make life simplier
 cmake -GNinja \
