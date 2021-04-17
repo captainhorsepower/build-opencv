@@ -2,3 +2,7 @@
 	path = opencv
 	url = git@github.com:opencv/opencv.git
 	branch = master
+[submodule "opencv_contrib"]
+	path = opencv_contrib
+	url = git@github.com:opencv/opencv_contrib.git
+	branch = master
