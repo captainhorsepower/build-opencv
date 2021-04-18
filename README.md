@@ -90,3 +90,14 @@ which contains reasonable description in comments in `.hpp` files.
 
 Python API is generated from this `include` files with `CV_WRAP` and `CV_EXPORTS_W` macrosses. 
 (but some stuff like `cv2.xfeatures2d.SURF_create` I just can't understand)
+
+---
+
+Discorvering and using python API is a nightmare :)))
+
+You need to find appropriate module, then cpp function in it. 
+Then find how it maps to python (not always obviously and directly).
+And in most cases still google how to actually use it, as 
+docs and python help are empty...
+
+Maybe I just need to build docs?
