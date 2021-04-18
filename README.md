@@ -67,3 +67,26 @@ print(cv2.__version__)
 
 From cpp, when using cmake, export appropriate `OpenCV_DIR`. 
 See opencv docs for the rest.
+
+
+## Add and remove modules from build.
+
+Now I explicitly specify required modules with `-D BUILD_LIST=model1,module2,...`. It automatically accounts for transitive dependencies.
+
+There is a catch: presense or absense of a module 'A' may change build config
+for module 'B' (optional dependency). Then the whole thing won't compile.
+
+Workaround: from `build` forlder remove `lib/<module_A.*>`. Ninja will recompile missing fiels from scratch. 
+
+Same thing for python executable. It can 'ignore' all the updates.
+Then just delete it, recompile and reinstall. Should do the trick.
+
+## Discovering modules
+
+Do find out what modules are available to you and what they do,
+inspect [`opencv/modules`](opencv/modules) and [`opencv_contrib/modules`]
+(opencv_contrib/modules). Within each module navigate to `include` folder, 
+which contains reasonable description in comments in `.hpp` files.
+
+Python API is generated from this `include` files with `CV_WRAP` and `CV_EXPORTS_W` macrosses. 
+(but some stuff like `cv2.xfeatures2d.SURF_create` I just can't understand)
