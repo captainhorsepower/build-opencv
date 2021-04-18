@@ -18,5 +18,5 @@ cmake -GNinja \
     -D CMAKE_BUILD_TYPE='Release' \
     -D OPENCV_ENABLE_NONFREE='YES' \
     -D OPENCV_EXTRA_MODULES_PATH='../opencv_contrib/modules' \
-    -D BUILD_LIST=python3,videoio,highgui,xfeatures2d \
+    -D BUILD_LIST=python3,videoio,highgui,calib3d,xfeatures2d \
     "../opencv"
