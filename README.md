@@ -101,3 +101,21 @@ And in most cases still google how to actually use it, as
 docs and python help are empty...
 
 Maybe I just need to build docs?
+
+
+## Links
+
+- how [python mappings are generated](https://docs.opencv.org/master/da/d49/tutorial_py_bindings_basics.html)
+
+- opencv build [config options](https://docs.opencv.org/master/db/d05/tutorial_config_reference.html)
+
+- trying to 'install' cumstom opencv to venvs:
+    - https://stackoverflow.com/questions/55600132/installing-local-packages-with-python-virtualenv-system-site-packages
+    - https://docs.python.org/3/library/site.html
+
+- might be useful one day:
+    - https://gist.github.com/Unbinilium/13495c2fa236cc31c1b2bfb929c7e0db
+    
+    - [meson](https://mesonbuild.com/Wrap-dependency-system-manual.html) and [cmake](https://cmake.org/overview/)
+    
+    - https://carlosvin.github.io/posts/choosing-modern-cpp-stack/en/
