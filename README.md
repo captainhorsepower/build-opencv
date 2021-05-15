@@ -103,6 +103,15 @@ docs and python help are empty...
 Maybe I just need to build docs?
 
 
+## Python bindings for custom modules
+
+Ну держись...
+
+1. cmake не переваривает .cc файлы без дополнительный конфигов (linker language бла бла).
+   Так что сиди ровно и использую .hpp .cpp
+2. Сгенерированные биндинги ожидают namespace, используй (или переписывай генератора)
+3. ауф
+
 ## Links
 
 - how [python mappings are generated](https://docs.opencv.org/master/da/d49/tutorial_py_bindings_basics.html)

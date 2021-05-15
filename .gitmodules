@@ -6,3 +6,6 @@
 	path = opencv_contrib
 	url = git@github.com:opencv/opencv_contrib.git
 	branch = master
+[submodule "custom-modules/polarrect"]
+	path = custom-modules/polarrect
+	url = git@github.com:captainhorsepower/PolarRectification.git
